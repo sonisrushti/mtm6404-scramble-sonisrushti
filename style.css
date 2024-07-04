@@ -1,7 +1,7 @@
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    font-family: 'Arial', sans-serif;
+    background-color: #353535;
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,60 +12,77 @@ body {
   
   #root {
     text-align: center;
+    background: #3c6e71;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   }
   
   h1 {
-    font-size: 32px;
+    font-size: 36px;
     margin-bottom: 20px;
-    color: #007acc;
+    color: #ffffff;
   }
   
   p {
-    font-size: 18px;
-    margin: 10px 0;
+    font-size: 20px;
+    margin: 15px 0;
+    color: #d9d9d9;
   }
   
   form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-bottom: 20px;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
   }
   
   input {
-    padding: 10px;
-    font-size: 16px;
-    border: 2px solid #007acc;
-    border-radius: 5px;
-    background-color: #fff;
-    color: #333;
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    background-color: #353535;
+    color: #ffffff;
+    transition: border-color 0.3s, background-color 0.3s;
+  }
+  
+  input:focus {
+    border-color: #d9d9d9;
+    background-color: #3c6e71;
+    outline: none;
   }
   
   button {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 15px 25px;
+    font-size: 18px;
     border: none;
-    border-radius: 5px;
-    background: #007acc;
-    color: #fff;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #353535;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.3s, color 0.3s;
   }
   
   button:hover {
-    background: #005f99;
+    background: #d9d9d9;
+    color: #353535;
   }
   
   button[disabled] {
-    background: #ccc;
+    background: #757575;
     cursor: not-allowed;
   }
   
   button:not([disabled]):hover {
-    background: #005f99;
+    background: #d9d9d9;
+    color: #353535;
   }
   
   .score-container, .strikes-container, .passes-container {
-    margin: 5px 0;
+    margin: 10px 0;
+    font-size: 22px;
+    color: #ffffff;
   }
   
